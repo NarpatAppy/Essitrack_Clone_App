@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Essitrack Clone ND</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Login</string>
+    <string name="title_activity_welcome">Home Screen</string>
+
+    <!-- Intro Slider String-->
+
+    <!-- Slide 1 Title and Description-->
+    <string name="slide_1_title">TRACK YOUR ORDERS</string>
+    <string name="slide_1_desc1">Search for an order by tracking id or</string>
+    <string name="slide_1_desc2">reference number and track its status in</string>
+    <string name="slide_1_desc3">in near real time.</string>
+
+    <!-- Slide 2 Title and Description-->
+    <string name="slide_2_title">VIEW PROGRESS STATUS</string>
+    <string name="slide_2_desc1">Will order(s) be delivered on time?</string>
+    <string name="slide_2_desc2">Check the scheduled order delivery</string>
+    <string name="slide_2_desc3">dates for order that are in progress.</string>
+
+    <!-- Slide 3 Title and Description-->
+    <string name="slide_3_title">QUICKVIEW DASHBOARD</string>
+    <string name="slide_3_desc1">The Essitrack dashboard provides you</string>
+    <string name="slide_3_desc2">reference number and track its status in</string>
+    <string name="slide_3_desc3">in near real time.</string>
+
+    <!-- Slide 4 Title and Description-->
+    <string name="slide_4_title">MANAGE YOUR ORDERS</string>
+    <string name="slide_4_desc1">To view the Orders Details page</string>
+    <string name="slide_4_desc2">for a specific order, click the Tracking ID</string>
+    <string name="slide_4_desc3">link in the Orders screen.</string>
+    <string name="signin">SIGN IN</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delayed_orders">Delayed Orders</string>
+
+
+</resources>

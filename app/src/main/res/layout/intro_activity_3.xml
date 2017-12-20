@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/intro_color_3"
+    tools:context="example.com.essitrack_clone_nd.IntroActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splash3_icon"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash3_icon"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slide_3_title"
+        android:id="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="190dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_3_desc1"
+            android:id="@+id/textView2"
+            android:textColor="#FFFFFF"
+
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_3_desc2"
+
+            android:textColor="#FFFFFF"
+
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_3_desc3"
+
+            android:textColor="#FFFFFF"
+
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+</RelativeLayout>

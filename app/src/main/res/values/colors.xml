@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0087CF</color>
+    <color name="colorPrimaryDark">#0077B7</color>
+    <color name="colorAccent">#3c5166</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="tab">#BDBDBD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="progress_start">#607D8B</color>
+    <color name="progress_end">#90A4AE</color>
+    <color name="in_progress">#C3CC4A</color>
+    <color name="completed">#61BA4F</color>
+    <color name="tab_selected">#7ED6DA</color>
+    <color name="tab_not_selected">#FFFFFF</color>
+    <color name="delayed_inprogress">#f29200</color>
+    <color name="delayed_completed">#f7b551</color>
+
+    <!-- Intro Activity color -->
+    <color name="intro_color_1">#0079C4</color>
+    <color name="intro_color_2">#48A87A</color>
+    <color name="intro_color_3">#5A5A5A</color>
+    <color name="intro_color_4">#DD5549</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

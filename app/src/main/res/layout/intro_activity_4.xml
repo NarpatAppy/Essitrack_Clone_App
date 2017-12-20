@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intro_color_4"
+    tools:context="example.com.essitrack_clone_nd.IntroActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splash4_icon"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash4_icon"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:text="@string/slide_4_title"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="190dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:id="@+id/manage"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_4_desc1"
+            android:id="@+id/textView2"
+            android:textColor="#FFFFFF"
+
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_4_desc2"
+
+            android:textColor="#FFFFFF"
+
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_4_desc3"
+
+            android:textColor="#FFFFFF"
+
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/start"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/manage"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="60dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/textView30"
+        android:background="#fff"/>
+</RelativeLayout>
