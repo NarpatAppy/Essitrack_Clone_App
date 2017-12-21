@@ -10,16 +10,24 @@ import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import example.com.essitrack_clone_nd.bean.Recyclerview;
+
 public class OrderDetailsActivity extends AppCompatActivity {
     public Typeface gotham_book, gotham_medium, gotham_bold;
     TextView referenceno;
-    ImageView backBtn, bookMarkBtn;
+    ImageView backBtn, bookMarkBtn, ivStar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_details);
         init();
+        final Recyclerview recyclerview=new Recyclerview();
+        String data=getIntent().getExtras().getString("refNo");;
+        final Boolean isBookmarked = getIntent().getExtras().getBoolean("bookmarked");
+        referenceno.setText(data);
+
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,9 +37,29 @@ public class OrderDetailsActivity extends AppCompatActivity {
         bookMarkBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (recyclerview.isBoomarked()){
+
+                    recyclerview.setBoomarked(false);
+                    ivStar.setImageDrawable(getResources().getDrawable(R.drawable.star));
+
+                }else {
+                    recyclerview.setBoomarked(true);
+                    ivStar.setImageDrawable(getResources().getDrawable(R.drawable.star1));
+                }
+
 
             }
         });
+
+
+        if(isBookmarked)
+        {
+         ivStar.setImageDrawable(getResources().getDrawable(R.drawable.star));
+        }
+        else
+        {
+            ivStar.setImageDrawable(getResources().getDrawable(R.drawable.star1));
+        }
 
     }
 
@@ -54,5 +82,6 @@ public class OrderDetailsActivity extends AppCompatActivity {
         referenceno = findViewById(R.id.referenceno);
         bookMarkBtn =  findViewById(R.id.ivStar);
         backBtn =  findViewById(R.id.back_btn);
+        ivStar = findViewById(R.id.ivStar);
     }
 }

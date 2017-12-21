@@ -32,7 +32,6 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
     private List<Recyclerview> tracklist;
     private List<Recyclerview> tracklistFiltered;
 
-
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView status, referenceno, reference,trackingno,tracking,deliveryby,ddate,entryon,entrydate;
         ImageView ivStar;
@@ -71,6 +70,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         final Recyclerview recyclerview = tracklistFiltered.get(position);
+        OrderDetailsActivity orderDetailsActivity=new OrderDetailsActivity();
         holder.status.setText(recyclerview.getStatus());
         holder.reference.setText(recyclerview.getReference());
         holder.referenceno.setText(recyclerview.getReferenceno());
@@ -96,10 +96,13 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
 
             }
         });
+
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(),OrderDetailsActivity.class);
+                intent.putExtra("refNo",recyclerview.getReference());
+                intent.putExtra("bookmarked",recyclerview.isBoomarked());
                 view.getContext().startActivity(intent);
             }
         });
