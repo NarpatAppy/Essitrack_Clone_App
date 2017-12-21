@@ -88,24 +88,21 @@ public class Late extends Fragment{
        gotham_bold = Typeface.createFromAsset(getContext().getAssets(), "fonts/gothambold1.ttf");
 
 
-        late_completed = (TextView) view.findViewById(R.id.late_completed);
-        late_inprogress = (TextView) view.findViewById(R.id.late_inprogress);
-        late_total = (TextView) view.findViewById(R.id.late_total);
-        tvLateProgress = (TextView) view.findViewById(R.id.tvLateProgress);
-        tvLateCompleted = (TextView) view.findViewById(R.id.tvLateCompleted);
-        your_orders_text= (TextView) view.findViewById(R.id.your_orders_text);
+        late_completed =  view.findViewById(R.id.late_completed);
+        late_inprogress =  view.findViewById(R.id.late_inprogress);
+        late_total =  view.findViewById(R.id.late_total);
+        tvLateProgress =  view.findViewById(R.id.tvLateProgress);
+        tvLateCompleted =  view.findViewById(R.id.tvLateCompleted);
+        your_orders_text=  view.findViewById(R.id.your_orders_text);
         tvLateProgress.setTypeface(gotham_medium);
-//        your_orders_text.setTypeface(gotham_medium);
         tvLateCompleted.setTypeface(gotham_medium);
-  //      late_total.setTextColor(Color.parseColor("8F939C"));
+        main_layout =  view.findViewById(R.id.main_layout);
 
-        main_layout = (RelativeLayout) view.findViewById(R.id.main_layout);
-
-        mChart = (PieChart) view.findViewById(R.id.chart1);
+        mChart =  view.findViewById(R.id.chart1);
 
 
-        completed = (LinearLayout) view.findViewById(R.id.completed);
-        in_progress = (LinearLayout) view.findViewById(R.id.in_progress);
+        completed =  view.findViewById(R.id.completed);
+        in_progress =  view.findViewById(R.id.in_progress);
         in_progress.setBackgroundColor(getResources().getColor(R.color.delayed_inprogress));
         completed.setBackgroundColor(getResources().getColor(R.color.delayed_completed));
 

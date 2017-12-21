@@ -57,9 +57,7 @@ public class Recyclerview {
         this.tracking = tracking;
     }
 
-  /*  public String getDeliveryby() {
-        return deliveryby;
-    }*/
+
     public String getTrackingno() {
         return trackingno;
     }
@@ -69,10 +67,6 @@ public class Recyclerview {
     }
 
 
-   /* public void setDeliveryby(String deliveryby) {
-        this.deliveryby = deliveryby;
-    }
-*/
     public String getDdate() {
         return ddate;
     }
@@ -81,13 +75,7 @@ public class Recyclerview {
         this.ddate = ddate;
     }
 
-  /*  public String getEntryon() {
-        return entryon;
-    }*/
 
-   /* public void setEntryon(String entryon) {
-        this.entryon = entryon;
-    }*/
 
     public String getEntrydate() {
         return entrydate;

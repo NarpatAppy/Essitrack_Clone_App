@@ -24,10 +24,10 @@ public class LoginActivity extends AppCompatActivity {
 
         sharedPref=new SharedPref(this);
 
-        sign_in = (Button) findViewById(R.id.sign_in);
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
-        progressBar1 = (ProgressBar)findViewById(R.id.progressBar1);
+        sign_in =  findViewById(R.id.sign_in);
+        username =  findViewById(R.id.username);
+        password =  findViewById(R.id.password);
+        progressBar1 = findViewById(R.id.progressBar1);
 
         sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,38 +63,6 @@ public class LoginActivity extends AppCompatActivity {
 
 
                 }
-//
-//                if(username.getText() == null & password.getText() == null)
-//                {
-//                    Toast.makeText(LoginActivity.this,"Enter username and password",Toast.LENGTH_SHORT).show();
-//                    return;
-//                }
-//                if(username.getText().toString().equalsIgnoreCase("")){
-//                    Toast.makeText(LoginActivity.this,"Please enter username!",Toast.LENGTH_SHORT).show();
-//                    return;
-//                }
-//                 if(password.getText().toString().equalsIgnoreCase("")){
-//                    Toast.makeText(LoginActivity.this,"Please enter password!",Toast.LENGTH_SHORT).show();
-//                    return;
-//                }
-//                if (password.length()<=5){
-//                    Toast.makeText(LoginActivity.this,"Please enter password more than 6 character",Toast.LENGTH_SHORT).show();
-//                    return;
-//                }
-//                if (n1.equals(username.getText().toString()) &&  (password.getText().toString()).equals("123456")) {
-//
-//
-//                    progressBar1.setVisibility(View.VISIBLE);
-//                    sign_in.setVisibility(View.GONE);
-//                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-//                    startActivity(intent);
-//                    finish();
-//                }else
-//                {
-//                    Toast.makeText(LoginActivity.this,"wrong username and password",Toast.LENGTH_SHORT).show();
-//                    return;
-//                }
-
 
 
             }

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Essitrack_Clone_App.iml" filepath="$PROJECT_DIR$/Essitrack_Clone_App.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/essitrack_clone_nd.iml" filepath="$PROJECT_DIR$/essitrack_clone_nd.iml" />
+      <module fileurl="file://C:\Users\Appy-Sales\Documents\GitHub\Essitrack_Clone_App\app\app.iml" filepath="C:\Users\Appy-Sales\Documents\GitHub\Essitrack_Clone_App\app\app.iml" />
+      <module fileurl="file://C:\Users\Appy-Sales\Documents\GitHub\Essitrack_Clone_App\essitrack_clone_nd.iml" filepath="C:\Users\Appy-Sales\Documents\GitHub\Essitrack_Clone_App\essitrack_clone_nd.iml" />
     </modules>
   </component>
 </project>

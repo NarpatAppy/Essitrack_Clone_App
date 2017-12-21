@@ -94,25 +94,22 @@ public class Ontime extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        tvProgress= (TextView) view.findViewById(R.id.tvProgress);
-        tvCompleted= (TextView) view.findViewById(R.id.tvCompleted);
-        your_orders_text= (TextView) view.findViewById(R.id.your_orders_text);
-        ontime_completed = (TextView) view.findViewById(R.id.ontime_completed);
-        ontime_inprogress = (TextView) view.findViewById(R.id.ontime_inprogress);
-        ontime_total = (TextView) view.findViewById(R.id.ontime_total);
-//        ontime_total.setTextColor(Color.parseColor("8F939C"));
-
-        completed = (LinearLayout) view.findViewById(R.id.completed);
-        in_progress = (LinearLayout) view.findViewById(R.id.in_progress);
+        tvProgress=  view.findViewById(R.id.tvProgress);
+        tvCompleted=  view.findViewById(R.id.tvCompleted);
+        your_orders_text=  view.findViewById(R.id.your_orders_text);
+        ontime_completed =  view.findViewById(R.id.ontime_completed);
+        ontime_inprogress =  view.findViewById(R.id.ontime_inprogress);
+        ontime_total =  view.findViewById(R.id.ontime_total);
+        completed =  view.findViewById(R.id.completed);
+        in_progress =  view.findViewById(R.id.in_progress);
 
         gotham_book = Typeface.createFromAsset(getContext().getAssets(), "fonts/Gotham-Book.ttf");
         gotham_medium = Typeface.createFromAsset(getContext().getAssets(), "fonts/Gotham-Medium.ttf");
         gotham_bold = Typeface.createFromAsset(getContext().getAssets(), "fonts/gothambold1.ttf");
         ontime_completed.setTypeface(gotham_medium);
-       // your_orders_text.setTypeface(gotham_medium);
         ontime_inprogress.setTypeface(gotham_medium);
         ontime_total.setTypeface(gotham_medium);
-        main_layout = (RelativeLayout) view.findViewById(R.id.main_layout);
+        main_layout =  view.findViewById(R.id.main_layout);
         tvProgress.setTypeface(gotham_medium);
         tvCompleted.setTypeface(gotham_medium);
 
