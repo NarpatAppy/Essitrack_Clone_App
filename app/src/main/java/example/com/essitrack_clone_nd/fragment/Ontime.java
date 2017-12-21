@@ -159,7 +159,7 @@ public class Ontime extends Fragment {
             Log.d(TAG, e.toString());
 
         }
-        mChart = (PieChart) view.findViewById(R.id.chart1);
+        mChart =  view.findViewById(R.id.chart1);
 
         mChart.setUsePercentValues(true);
         mChart.getDescription().setEnabled(false);

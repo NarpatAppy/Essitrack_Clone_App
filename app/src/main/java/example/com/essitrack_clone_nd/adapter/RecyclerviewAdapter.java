@@ -1,6 +1,7 @@
 package example.com.essitrack_clone_nd.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
@@ -17,6 +18,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import example.com.essitrack_clone_nd.OrderDetailsActivity;
 import example.com.essitrack_clone_nd.R;
 import example.com.essitrack_clone_nd.bean.Recyclerview;
 
@@ -34,6 +36,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView status, referenceno, reference,trackingno,tracking,deliveryby,ddate,entryon,entrydate;
         ImageView ivStar;
+        View view;
         public MyViewHolder(View itemView) {
             super(itemView);
             status= itemView.findViewById(R.id.status);
@@ -46,7 +49,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
             entryon= itemView.findViewById(R.id.entryOn);
             entrydate= itemView.findViewById(R.id.entryDate);
             ivStar= itemView.findViewById(R.id.ivStar);
-
+            view=itemView;
         }
     }
     public RecyclerviewAdapter(List<Recyclerview> tracklist) {
@@ -93,7 +96,13 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
 
             }
         });
-
+        holder.view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),OrderDetailsActivity.class);
+                view.getContext().startActivity(intent);
+            }
+        });
 
     }
 

@@ -51,10 +51,10 @@ public class Bookmarks extends Fragment {
 
 
         super.onViewCreated(view, savedInstanceState);
-        viewPager = (ViewPager) view.findViewById(R.id.viewpager);
+        viewPager = view.findViewById(R.id.viewpager);
 
 
-        tabLayout = (TabLayout) view.findViewById(R.id.tabs);
+        tabLayout =  view.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
         setupViewPager(viewPager);
 

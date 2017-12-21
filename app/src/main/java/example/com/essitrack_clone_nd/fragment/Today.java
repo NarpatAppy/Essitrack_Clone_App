@@ -24,7 +24,6 @@ import java.util.List;
 
 import example.com.essitrack_clone_nd.OrderDetailsActivity;
 import example.com.essitrack_clone_nd.R;
-import example.com.essitrack_clone_nd.adapter.RecyclerTouchListener;
 import example.com.essitrack_clone_nd.adapter.RecyclerviewAdapter;
 import example.com.essitrack_clone_nd.bean.Recyclerview;
 import example.com.essitrack_clone_nd.util.AllData;
@@ -59,17 +58,6 @@ public class Today extends Fragment{
         recyclerView = view.findViewById(R.id.recycle);
         tracklist = new ArrayList<>();
         init();
-        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView, new RecyclerTouchListener.ClickListener() {
-            @Override
-            public void onClick(View view, int position) {
-                Intent intent = new Intent(view.getContext(),OrderDetailsActivity.class); view.getContext().startActivity(intent);
-            }
-
-            @Override
-            public void onLongClick(View view, int position) {
-
-            }
-        }));
         prepareListData();
 
 

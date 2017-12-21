@@ -23,6 +23,8 @@ import example.com.essitrack_clone_nd.adapter.RecyclerviewAdapter;
 import example.com.essitrack_clone_nd.bean.Recyclerview;
 import example.com.essitrack_clone_nd.util.AllData;
 
+import static example.com.essitrack_clone_nd.adapter.RecyclerviewAdapter.*;
+
 /**
  * A simple {@link Fragment} subclass.
  */
